@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AvdhutBhokare/valentines-surprise/static/css/main.f317d074.css",
+    "main.js": "/AvdhutBhokare/valentines-surprise/static/js/main.c781d9f6.js",
+    "index.html": "/AvdhutBhokare/valentines-surprise/index.html",
+    "main.f317d074.css.map": "/AvdhutBhokare/valentines-surprise/static/css/main.f317d074.css.map",
+    "main.c781d9f6.js.map": "/AvdhutBhokare/valentines-surprise/static/js/main.c781d9f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f317d074.css",
+    "static/js/main.c781d9f6.js"
+  ]
+}
