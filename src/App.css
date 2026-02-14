@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  font-family: 'Great Vibes', 'Segoe Script', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Name Page Styles */
+.name-page {
+  background: linear-gradient(135deg, #FFDAB9 0%, #FFB6C1 50%, #ffa5a5 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.name-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 1700px;
+  animation: slideUp 0.6s ease-out;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #FF1493;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.2);
+}
+
+.name-input {
+  width: 100%;
+  padding: 18px 25px;
+  font-size: 1.2rem;
+  border: 3px solid #FFB6C1;
+  border-radius: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.name-input:focus {
+  border-color: #FF1493;
+  box-shadow: 0 0 20px rgba(255, 20, 147, 0.3);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 18px 40px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #FF1493, #FF69B4);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 20, 147, 0.4);
+}
+
+.submit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 20, 147, 0.5);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* Question Page Styles */
+.question-page {
+  background: linear-gradient(135deg, #FFE4E1 0%, #FFB6C1 50%, #FF69B4 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.question-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 60px 50px;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 1700px;
+  position: relative;
+  animation: slideUp 0.6s ease-out;
+}
+
+.question-title {
+  font-size: 5.2rem;
+  color: #FF1493;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.2);
+}
+
+.buttons-container {
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yes-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #32CD32, #00FF00);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(50, 205, 50, 0.4);
+  z-index: 10;
+}
+
+.yes-button:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 8px 25px rgba(50, 205, 50, 0.5);
+}
+
+.no-button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #DC143C, #FF0000);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(220, 20, 60, 0.4);
+  z-index: 5;
+}
+
+.no-button:hover {
+  transform: scale(0.95);
+}
+
+.hint-text {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #FF1493;
+  font-style: italic;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Success Page */
+.success-page {
+  background: linear-gradient(135deg, #FFD700 0%, #FF69B4 50%, #FF1493 100%);
+}
+
+.success-container {
+  animation: bounceIn 0.8s ease-out;
+}
+
+.success-title {
+  font-size: 5.5rem;
+  color: #FF1493;
+  margin-bottom: 30px;
+  animation: pulse 1.5s infinite;
+}
+
+.success-message {
+  font-size: 2.8rem;
+  color: #DC143C;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.success-subtitle {
+  font-size: 2.3rem;
+  color: #000000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.05);
+  }
+}

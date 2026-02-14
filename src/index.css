@@ -1,0 +1,28 @@
+/* Optional: add Puccery Love by putting PucceryLove.otf in src/fonts/ and uncommenting:
+@font-face {
+  font-family: 'Puccery Love';
+  src: url('./fonts/PucceryLove.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+Then use font-family: 'Puccery Love', ... in body/App */
+
+body {
+    margin: 0;
+    font-family: 'Great Vibes', 'Segoe Script', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
