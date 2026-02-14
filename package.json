@@ -1,7 +1,7 @@
 {
   "name": "valentine-surprise",
   "version": "0.1.0",
-  "homepage": "https://github.com/AvdhutBhokare/valentines-surprise.git",
+  "homepage": "https://github.com/AvdhutBhokare/valentines-surprise",
   "private": true,
 
   "dependencies": {
